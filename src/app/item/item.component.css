@@ -1,0 +1,73 @@
+.list {
+    margin-right: 150px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 30px 200px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.desc {
+    color: #d65c53;
+}
+
+
+  .icon-edit {
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.edit:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    
+}
+
+.emptyTrashButton {
+    margin-left: 250px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .emptyTrashButton:hover {
+    background-color: #cc0000;
+  }

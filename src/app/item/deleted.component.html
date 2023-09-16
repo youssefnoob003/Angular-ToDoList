@@ -1,0 +1,19 @@
+<button class="emptyTrashButton" (click)="del();ref()">Delete All</button>
+<div *ngFor="let item of list">
+    <div class="list" *ngIf="item.deleted">
+    <div class="left">
+        <div class="description">
+            <div class="title">
+                {{item.title}}
+            </div>
+            <div class= "desc">
+                <div><img src="./assets/icons/interface.png" class = "icon"></div>
+                <div class="desc">{{item.desc}}</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="edit" (click)="item.deleted = false; onChange();"><img src="./assets/icons/restore.png" class="icon-edit"></button>
+    </div>
+</div>
+</div>

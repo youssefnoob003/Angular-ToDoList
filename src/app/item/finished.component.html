@@ -1,0 +1,20 @@
+<div *ngFor="let item of list">
+    <div class="list" *ngIf="!item.deleted && item.done">
+    <div class="left">
+        <div><input type="checkbox" [(ngModel)]="item.done" (change)="onChange()" ></div>
+        <div class="description">
+            <div class="title">
+                {{item.title}}
+            </div>
+            <div class= "desc">
+                <div><img src="./assets/icons/interface.png" class = "icon"></div>
+                <div class="desc">{{item.desc}}</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="edit" (click)="item.deleted = true;onChange()"><img src="./assets/icons/delete.png" class="icon-edit"></button>
+        <button class="edit"><img src="./assets/icons/edit.png" class="icon-edit"></button>
+    </div>
+</div>
+</div>

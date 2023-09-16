@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="header">
+    <div class="left-header">
+      <button class="head-but"><img src="./assets/icons/ham-menu.svg" class="icon"></button>
+      <button class="head-but" [routerLink]="['']"><img src="./assets/icons/home.svg" class="icon"></button>
+      <input type="text" placeholder="Search" class="head-box">
+    </div>
+    <div class="right-header">
+      <button class="head-but" [routerLink]="['new']"><img src="./assets/icons/add.png" class="icon" ></button>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="side-bar">
+      <div class="el" [routerLink]="['All']">
+        <button class="side-bar-el"><img src="./assets/icons/inbox.png" class="icon">
+          <div>All</div>
+        </button>
+      </div>
+
+      <div class="el" [routerLink]="['Upcoming']">
+        <button class="side-bar-el">
+          <img src="./assets/icons/calender.png" class="icon">
+          <div>Upcoming</div>
+        </button>
+      </div>
+
+      <div class="el" [routerLink]="['finished']">
+        <button class="side-bar-el">
+          <img src="./assets/icons/tick.png" class="icon">
+          <div>Finished</div>
+        </button>
+      </div>
+
+      <div class="el" [routerLink]="['deleted']">
+        <button class="side-bar-el">
+          <img src="./assets/icons/trash.png" class="icon">
+          <div>Deleted</div>
+        </button>
+      </div>
+    </div>  
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+</div>
