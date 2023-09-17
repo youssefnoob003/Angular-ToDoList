@@ -1,3 +1,6 @@
+# Description
+A simple ToDoList web application using Angular that implements CRUD operations. It stores data inside the local storage.
+
 # Todolist
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
